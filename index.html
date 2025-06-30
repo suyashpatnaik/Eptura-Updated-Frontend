@@ -1,27 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eptura AI Assistant</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eptura AI Assistant</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="container dark-mode" id="app">
-        <div class="sidebar">
-            <button onclick="startNewChat()">+ New Chat</button>
-            <input type="text" placeholder="Search by topic..." />
-            <div class="history">Chat History</div>
-        </div>
-        <div class="main">
-            <h1>Eptura AI</h1>
-            <p>Welcome to Eptura AI</p>
-            <div id="chat-box"></div>
-            <textarea id="user-input" placeholder="Ask me anything..."></textarea>
-            <button onclick="sendMessage()">Send</button>
-        </div>
+  <div class="container dark-mode" id="app">
+    <div class="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</div>
+    <div class="sidebar" id="sidebar">
+      <button onclick="startNewChat()">+ New Chat</button>
+      <input type="text" placeholder="Search by topic..." />
+      <div class="history">Chat History</div>
     </div>
+    <div class="main">
+      <h1>Eptura AI</h1>
+      <p>Welcome to Eptura AI</p>
+      <div id="chat-box"></div>
+      <textarea id="user-input" placeholder="Ask me anything..."></textarea>
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
 </body>
 </html>
